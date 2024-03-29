@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Report</title>
+        <style>
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Temperature in {{data.name}} : {{data.main.temp}} celsius</h3>
+        <h3>Weather is currently {{data.weather[0].description}}</h3>
+        <h3>Pressure : {{data.main.pressure}} hPa | Humidity : {{data.main.humidity}}% | Wind Speed : {{data.wind.speed}} m/s</h3>
+    </body>
+</html>
